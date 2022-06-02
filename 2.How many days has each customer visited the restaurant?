@@ -1,0 +1,3 @@
+select customer_id, count(distinct order_date) no_days
+from dannys_diner.sales 
+group by customer_id;
