@@ -1,0 +1,6 @@
+select customer_id, sum(price) 
+from dannys_diner.sales sls
+join 
+dannys_diner.menu mnu
+on sls.product_id = mnu.product_id
+group by customer_id;
